@@ -1,3 +1,6 @@
+//
+//wait for the DOM to load before running
+//
 document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByTagName("button");
 
@@ -13,7 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-function RunGame() {}
+/**
+ * the main game loop call when the script first loads
+ * and after the user's answer has been processed 
+ */
+function RunGame() {
+  //create 2 random numbers between 1 and 25
+  let num1 =Math.floor(Math.random()*25)+1;
+  let num2 =Math.floor(Math.random()*25)+1;
+}
 
 function CheckAnswer() {}
 
